@@ -37,7 +37,7 @@ function game() {
     while (enteredNumber !== generatedNumber) {
         cows = 0;
         bulls = 0;
-        enteredNumber = prompt("Enter a 4-digits number:");
+        enteredNumber = prompt("Enter a 4-digits number:\n" + message);
 
         compare(generatedNumber, enteredNumber);
 
@@ -53,7 +53,6 @@ function game() {
 
         } else {
             message += enteredNumber + ' ' + bulls + ' bull(s)' + " " + cows + " cow(s)\n";
-            alert(message);
         }
     }
 }
